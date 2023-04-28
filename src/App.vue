@@ -10,7 +10,7 @@ import TeamsList from './components/TeamsList.vue'
         components: { TeamsList, Navbar },
         methods: {
             async fetchAllTeamsData() {
-                const response = await fetch('https://cricket-ranking-league.netlify.app/.netlify/functions/api');
+                const response = await fetch('https://webapp-finalproject.onrender.com/api');
                 return await response.json();
             }
         },
